@@ -113,7 +113,7 @@ namespace Teacher_Records_System
 
                     }
                 }
-                else if (User_choice == "4")// show all Teacher stored in txt file
+                else if (User_choice == "4")//Option 4 - show all Teacher stored in txt file
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine(" ID" + "  \t TeacherName" + "    \tTeacherClass " + "\tTeacherSection");
@@ -128,6 +128,10 @@ namespace Teacher_Records_System
 
                     }
                     Console.ForegroundColor = ConsoleColor.White;
+                }
+                else  // stop while loop to exit from program
+                {
+                    system_status = false;
                 }
             }
         }
