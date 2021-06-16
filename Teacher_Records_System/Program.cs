@@ -35,7 +35,11 @@ namespace Teacher_Records_System
                 Console.WriteLine();
 
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Select Option 1- Add Teacher 2- Retrieve  Teacher 3- Update Teacher   4- Display Teacher  || 0 TO EXIT . ");
+                Console.WriteLine(@"Select Option 1- Add Teacher
+                                    2- Search in Teachers
+                                    3- Update Teacher
+                                    4- Display Teacher
+                                    || 0 TO EXIT . ");
                 string User_choice = Console.ReadLine();
                 Console.ForegroundColor = ConsoleColor.White;
 
@@ -59,6 +63,21 @@ namespace Teacher_Records_System
                         File.WriteAllLines(txtPath, lines);
                         Console.WriteLine(" Insert data successfully");
 
+                    }
+                }
+                else if (User_choice == "2")// Option 2 - Search showing message ask user Enter Teacher ID to Search
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Enter TeacherID To Search :");
+                    string SearchID = Console.ReadLine();
+                    foreach (var line in lines)
+                    {
+                        string[] DataArray = line.Split('	');
+                        if (DataArray[0] == SearchID)
+                        {
+                            Console.WriteLine("TeacherID :" + DataArray[0] + "\t TeacherName " + DataArray[1] + "\t TeacherClass " + DataArray[2] + "\t TeacherSection " + DataArray[3] + "\t");
+                            Console.ForegroundColor = ConsoleColor.Green;
+                        }
                     }
                 }
             }
