@@ -10,6 +10,8 @@ namespace Teacher_Records_System
         static void Main(string[] args)
         {
             welcome();
+            Console.WriteLine();
+            Teacher_Records();
             Console.ReadKey();
             ByeMessage();
         }
@@ -18,7 +20,8 @@ namespace Teacher_Records_System
         {
             Console.ForegroundColor = ConsoleColor.Green;
 
-            Console.WriteLine(@"Welcome to my little project It is an example of a system for storing teachers' data Sponsored by Simpliearn");
+            Console.WriteLine("\t" +
+                "Welcome to my little project It is an example of a system for storing teachers' data Sponsored by Simpliearn");
 
             Console.ForegroundColor = ConsoleColor.Yellow;
         }
@@ -27,20 +30,16 @@ namespace Teacher_Records_System
         {
 
             bool system_status = true;
-            string txtPath = @"C:\Users\moasmri\Desktop\ConsoleAppTeacher\ConsoleAppTeacher\moasmrit.txt";// txt file path and name
+            string txtPath = @"C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\moasmrit.txt";// txt file path and name
 
             while (system_status)
             {
 
-                List<string> lines = File.ReadAllLines(txtPath).ToList();
+                List<string> lines = File.ReadAllLines(txtPath).ToList();//best to read a File into List
                 Console.WriteLine();
 
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine(@"Select Option 1- Add Teacher
-                                    2- Search in Teachers
-                                    3- Update Teacher
-                                    4- Display Teacher
-                                    || 0 TO EXIT . ");
+                Console.WriteLine("Select Option 1- Add Teacher 2- Search in Teachers 3- Update Teacher 4- Display Teacher || 0 TO EXIT . ");
                 string User_choice = Console.ReadLine();
                 Console.ForegroundColor = ConsoleColor.White;
 
@@ -48,6 +47,7 @@ namespace Teacher_Records_System
                 {
                     Console.Write("How many Teachers you want To Add ? :");
                     int TeacherCount = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Last Records Number is  "  + lines.Count);// get number of record to suggest next TeacherID
                     for (int i = 0; i < TeacherCount; i++)
                     {
                         Console.Write("Enter TeacherID :");
@@ -117,7 +117,11 @@ namespace Teacher_Records_System
                 else if (User_choice == "4")//Option 4 - show all Teacher stored in txt file
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine(" ID" + "  \t TeacherName" + "    \tTeacherClass " + "\tTeacherSection");
+                    string filename = null;
+
+                    // using the method
+                    filename = Path.GetFileName(txtPath);
+                    Console.WriteLine("Number Of Records stored in "+ filename +" is " + lines.Count);
                     Console.ForegroundColor = ConsoleColor.Red;
 
                     foreach (string line in lines)
@@ -139,11 +143,11 @@ namespace Teacher_Records_System
 
         static void ByeMessage()
         {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Thank you for trying my little app. I hope to make bigger projects than this and keep learning .NET with simplilearn ");
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("\tThank you for trying my little app. I hope to make bigger projects than this and keep learning .NET with simplilearn ");
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(" See you on another project ");
-            Console.ReadKey();
+        
 
         }
     }
