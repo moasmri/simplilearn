@@ -6,7 +6,16 @@ namespace Teacher_Records_System
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            welcome();
+        }
+
+        static void welcome()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+          
+            Console.WriteLine(@"Welcome to my little project It is an example of a system for storing teachers' data Sponsored by Simpliearn");
+            
+            Console.ForegroundColor = ConsoleColor.Yellow;
         }
     }
 }

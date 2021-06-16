@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abusa\\Desktop\\Simpliearn\\Teacher_Records_System\\Teacher_Records_System\\Teacher_Records_System.csproj",
+      "projectUniqueName": "C:\\Users\\abusa\\Desktop\\123\\simplilearn\\Teacher_Records_System\\Teacher_Records_System.csproj",
       "projectName": "Teacher_Records_System",
-      "projectPath": "C:\\Users\\abusa\\Desktop\\Simpliearn\\Teacher_Records_System\\Teacher_Records_System\\Teacher_Records_System.csproj",
+      "projectPath": "C:\\Users\\abusa\\Desktop\\123\\simplilearn\\Teacher_Records_System\\Teacher_Records_System.csproj",
       "packagesPath": "C:\\Users\\abusa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abusa\\Desktop\\Simpliearn\\Teacher_Records_System\\Teacher_Records_System\\obj\\",
+      "outputPath": "C:\\Users\\abusa\\Desktop\\123\\simplilearn\\Teacher_Records_System\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
