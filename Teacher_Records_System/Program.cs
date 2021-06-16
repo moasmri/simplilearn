@@ -113,7 +113,22 @@ namespace Teacher_Records_System
 
                     }
                 }
-               
+                else if (User_choice == "4")// show all Teacher stored in txt file
+                {
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine(" ID" + "  \t TeacherName" + "    \tTeacherClass " + "\tTeacherSection");
+                    Console.ForegroundColor = ConsoleColor.Red;
+
+                    foreach (string line in lines)
+                    {
+                        string[] DataArray = line.Split('	');
+
+
+                        Console.WriteLine("  " + DataArray[0] + "   \t " + DataArray[1] + "    \t" + DataArray[2] + "    \t   " + DataArray[3]);
+
+                    }
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
             }
         }
     }
