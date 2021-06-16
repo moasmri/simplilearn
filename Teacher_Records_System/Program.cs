@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace Teacher_Records_System
 {
@@ -13,9 +16,9 @@ namespace Teacher_Records_System
         static void welcome() // first show welcome message
         {
             Console.ForegroundColor = ConsoleColor.Green;
-          
+
             Console.WriteLine(@"Welcome to my little project It is an example of a system for storing teachers' data Sponsored by Simpliearn");
-            
+
             Console.ForegroundColor = ConsoleColor.Yellow;
         }
 
@@ -24,6 +27,18 @@ namespace Teacher_Records_System
 
             bool system_status = true;
             string txtPath = @"C:\Users\moasmri\Desktop\ConsoleAppTeacher\ConsoleAppTeacher\moasmrit.txt";// txt file path and name
+
+            while (system_status)
+            {
+
+                List<string> lines = File.ReadAllLines(txtPath).ToList();
+                Console.WriteLine();
+
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Select Option 1- Add Teacher 2- Retrieve  Teacher 3- Update Teacher   4- Display Teacher  || 0 TO EXIT . ");
+                string User_choice = Console.ReadLine();
+               
+            }
         }
     }
 }
