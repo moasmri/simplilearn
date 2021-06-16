@@ -11,6 +11,7 @@ namespace Teacher_Records_System
         {
             welcome();
             Console.ReadKey();
+            ByeMessage();
         }
 
         static void welcome() // first show welcome message
@@ -134,6 +135,15 @@ namespace Teacher_Records_System
                     system_status = false;
                 }
             }
+        }
+
+        static void ByeMessage()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Thank you for trying my little app. I hope to make bigger projects than this and keep learning .NET with simplilearn ");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine(" See you on another project ");
+            Console.ReadKey();
         }
     }
 }
