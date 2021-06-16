@@ -1,0 +1,16 @@
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\bin\Debug\net5.0\Teacher_Records_System.exe
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\bin\Debug\net5.0\Teacher_Records_System.deps.json
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\bin\Debug\net5.0\Teacher_Records_System.runtimeconfig.json
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\bin\Debug\net5.0\Teacher_Records_System.runtimeconfig.dev.json
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\bin\Debug\net5.0\Teacher_Records_System.dll
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\bin\Debug\net5.0\ref\Teacher_Records_System.dll
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\bin\Debug\net5.0\Teacher_Records_System.pdb
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\obj\Debug\net5.0\Teacher_Records_System.csproj.AssemblyReference.cache
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\obj\Debug\net5.0\Teacher_Records_System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\obj\Debug\net5.0\Teacher_Records_System.AssemblyInfoInputs.cache
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\obj\Debug\net5.0\Teacher_Records_System.AssemblyInfo.cs
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\obj\Debug\net5.0\Teacher_Records_System.csproj.CoreCompileInputs.cache
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\obj\Debug\net5.0\Teacher_Records_System.dll
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\obj\Debug\net5.0\ref\Teacher_Records_System.dll
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\obj\Debug\net5.0\Teacher_Records_System.pdb
+C:\Users\abusa\Desktop\123\simplilearn\Teacher_Records_System\obj\Debug\net5.0\Teacher_Records_System.genruntimeconfig.cache

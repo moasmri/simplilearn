@@ -7,6 +7,7 @@ namespace Teacher_Records_System
         static void Main(string[] args)
         {
             welcome();
+            Console.ReadKey();
         }
 
         static void welcome()
