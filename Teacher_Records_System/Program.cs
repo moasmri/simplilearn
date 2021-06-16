@@ -144,6 +144,7 @@ namespace Teacher_Records_System
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(" See you on another project ");
             Console.ReadKey();
+
         }
     }
 }
