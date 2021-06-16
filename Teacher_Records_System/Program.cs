@@ -80,6 +80,40 @@ namespace Teacher_Records_System
                         }
                     }
                 }
+                else if (User_choice == "3") // Option 3 - Update showing message ask user Enter Teacher ID to update Teacher info
+                {
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("Enter TeacherID for Data UPDET  :");
+                    string SearchID = Console.ReadLine();
+
+                    foreach (var line in lines)
+                    {
+                        string[] DataArray = line.Split('	');
+                        if (DataArray[0] == SearchID)
+                        {
+                            lines.Remove(DataArray[0] + '\t' + DataArray[1] + '\t' + DataArray[2] + '\t' + DataArray[3]);
+                            Console.Write("Enter Name :");
+                            string TeacherName = Console.ReadLine();
+                            Console.Write("Enter Class :");
+                            string TeacherClass = Console.ReadLine();
+                            Console.Write("Enter Section :");
+                            string TeacherSection = Console.ReadLine();
+                            DataArray[1] = TeacherName;
+                            DataArray[2] = TeacherClass;
+                            DataArray[3] = TeacherSection;
+                            string newdta = SearchID + '\t' + DataArray[1] + '\t' + DataArray[2] + '\t' + DataArray[3];
+                            lines.Add(newdta);
+                            lines.Sort();
+                            File.WriteAllLines(txtPath, lines);
+                            Console.WriteLine(DataArray[1] +" successful updated");
+                            Console.WriteLine("TeacherID :" + DataArray[0] + "\t TeacherName " + DataArray[1] + "\t TeacherClass " + DataArray[2] + "\t TeacherSection " + DataArray[3]);
+                            break;
+
+                        }
+
+                    }
+                }
+               
             }
         }
     }
