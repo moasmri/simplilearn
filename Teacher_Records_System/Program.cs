@@ -38,7 +38,8 @@ namespace Teacher_Records_System
                 Console.WriteLine("Select Option 1- Add Teacher 2- Retrieve  Teacher 3- Update Teacher   4- Display Teacher  || 0 TO EXIT . ");
                 string User_choice = Console.ReadLine();
                 Console.ForegroundColor = ConsoleColor.White;
-                if (User_choice == "1")
+
+                if (User_choice == "1")//Option 1- Add showing message ask user how many Teachers To Add
                 {
                     Console.Write("How many Teachers you want To Add ? :");
                     int TeacherCount = Convert.ToInt32(Console.ReadLine());
