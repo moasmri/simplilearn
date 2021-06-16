@@ -37,7 +37,29 @@ namespace Teacher_Records_System
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Select Option 1- Add Teacher 2- Retrieve  Teacher 3- Update Teacher   4- Display Teacher  || 0 TO EXIT . ");
                 string User_choice = Console.ReadLine();
-               
+                Console.ForegroundColor = ConsoleColor.White;
+                if (User_choice == "1")
+                {
+                    Console.Write("How many Teachers you want To Add ? :");
+                    int TeacherCount = Convert.ToInt32(Console.ReadLine());
+                    for (int i = 0; i < TeacherCount; i++)
+                    {
+                        Console.Write("Enter TeacherID :");
+                        int TeacherID = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Enter TeacherName :");
+                        string TeacherName = Console.ReadLine();
+                        Console.Write("Enter TeacherClass :");
+                        string TeacherClass = Console.ReadLine();
+                        Console.Write("Enter TeacherSection :");
+                        string TeacherSection = Console.ReadLine();
+                        string x = TeacherID.ToString() + '\t' + TeacherName + '\t' + TeacherClass + '\t' + TeacherSection;
+                        lines.Add(x);
+                        lines.Sort();
+                        File.WriteAllLines(txtPath, lines);
+                        Console.WriteLine(" Insert data successfully");
+
+                    }
+                }
             }
         }
     }
