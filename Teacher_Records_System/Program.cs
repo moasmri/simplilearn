@@ -39,7 +39,7 @@ namespace Teacher_Records_System
                 Console.WriteLine();
 
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Select Option 1- Add Teacher 2- Search in Teachers 3- Update Teacher 4- Display Teacher || 0 TO EXIT . ");
+                Console.WriteLine("**  Select Option 1- Add Teacher 2- Search in Teachers 3- Update Teacher 4- Display Teacher || 0 TO EXIT .  **");
                 string User_choice = Console.ReadLine();
                 Console.ForegroundColor = ConsoleColor.White;
 
